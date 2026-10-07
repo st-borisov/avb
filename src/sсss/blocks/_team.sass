@@ -1,0 +1,53 @@
+.team
+	position: relative
+	border-bottom: .0625rem solid var(--border)
+	border-top: .0625rem solid var(--border)
+	&::after
+		content: ''
+		left: 0
+		top: 0
+		width: 50%
+		background-color: var(--dark)
+		height: 100%
+		position: absolute
+		z-index: 0
+	&__header
+		position: relative
+		z-index: 1
+	&__title
+		color: var(--light-text)
+	&__image
+		z-index: 1
+		position: relative
+		.box
+			width: 100%
+			height: 43.75rem
+	&__text
+		max-width: 40.75rem
+		width: 100%
+	&__name
+		white-space: nowrap
+	&__phrase
+		.icon
+			width: 23.75rem
+
+@media (max-width: 991.98px)
+	.team
+		padding-bottom: 3.75rem
+		&::after
+			width: 100%
+			height: 56.875rem
+
+@media (max-width: 575.98px)
+	.team
+		&::after
+			height: 35.0625rem
+		&__image
+			.box
+				height: 23.75rem
+		&__phrase
+			.icon
+				width: 12.8125rem
+		&__name
+			font-size: 1rem
+			white-space: normal

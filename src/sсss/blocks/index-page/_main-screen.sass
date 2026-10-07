@@ -1,0 +1,54 @@
+.main-screen
+	position: relative
+	height: 100vh
+	&::before
+		z-index: 2
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.3)
+		z-index: 1
+	&__video
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		.box
+			width: 100%
+			height: 100%
+	&__desc
+		z-index: 2
+		position: relative
+		color: var(--light-text)
+	&__wrapper
+		position: relative
+		padding-top: 10.125rem
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding-bottom: 10.125rem
+		&::before
+			content: ''
+			width: 100%
+			height: .0625rem
+			border-bottom: .0625rem solid var(--border)
+			position: absolute
+			left: 0
+			bottom: 5rem
+			z-index: 10
+
+@media (max-width: 991.9808px)
+	.main-screen
+		&__text
+			text-transform: uppercase
+			font-weight: var(--bold)
+			letter-spacing: -0.03em
+			line-height: 1.1
+		.fixed-btn
+			display: flex

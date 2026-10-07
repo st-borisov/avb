@@ -1,0 +1,79 @@
+.commercial
+	border-top: .0625rem solid var(--border)
+	&::after
+		content: ''
+		width: 50%
+		height: 100%
+		background-color: var(--dark)
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 0
+	&::before
+		z-index: 2
+	&__text
+		max-width: 34.375rem
+		width: 100%
+	&__desc
+		z-index: 1
+		position: relative
+	&__slider
+		z-index: 1
+		height: 43.75rem
+	&__name
+		font-size: 2.5rem
+		font-weight: var(--bold)
+		line-height: 1.2
+		color: var(--light-text)
+	&__list
+		color: var(--light-text)
+		ul
+			font-weight: var(--med)
+			text-transform: uppercase
+			font-size: 1.125rem
+			line-height: 1.2s
+	&__slide
+		.project-card
+			&__desc
+				opacity: 1
+	&__btn
+		z-index: 3
+
+@media (max-width: 991.98px)
+	.commercial
+		&::after
+			display: none
+		&__header
+			padding-top: 3.75rem
+			padding-bottom: 3.75rem
+			position: relative
+			color: var(--light-text)
+			&::before
+				content: ''
+				background-color: var(--dark)
+				width: 100vw
+				height: 100%
+				position: absolute
+				left: -1.5rem
+				top: 0
+				z-index: -1
+		&__text
+			color: var(--light-text)
+		&__list
+			color: var(--main)
+		&__name
+			color: var(--main)
+		&__desc
+			padding-top: 3.75rem
+		&__slider
+			height: auto
+			.slick-slide
+				margin: 0 .625rem
+			.slick-list
+				margin-left: -0.625rem
+				width: calc(100% + 1.25rem)
+
+@media (max-width: 575.98px)
+	.commercial
+		&__name
+			font-size: 1.875rem

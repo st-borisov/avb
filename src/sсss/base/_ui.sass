@@ -1,0 +1,563 @@
+
+.container
+	max-width: var(--container-desktop)
+
+.container-fluid
+	padding: 0 1.5rem
+
+.box
+	position: relative
+	overflow: hidden
+	+center
+	img, picture, svg, video
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.icon
+	display: flex
+	svg, img
+		width: 100%
+
+.item
+	position: relative
+	&-link
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: 10
+
+.section
+	padding: 5rem 0
+	&-pt
+		padding-top: 5rem
+	&-pb
+		padding-bottom: 5rem
+	&-bp
+		padding: 7.5rem 0
+	&-bpt
+		padding-top: 7.5rem
+	&-bpb
+		padding-bottom: 7.5rem
+	&-first
+		margin-top: 6.0625rem
+	&-line
+		position: relative
+		&::before
+			content: ''
+			height: 100%
+			width: .0625rem
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+			border-left: .0625rem solid var(--border)
+			z-index: 1
+		&--light
+			&::before
+				border-left: .0625rem solid var(--light-text)
+
+.item-square
+	position: relative
+	display: flex
+	&::before
+		content: ''
+		min-width: .625rem
+		height: .625rem
+		background-color: var(--accent-1)
+		display: block
+		margin-right: 2.5rem
+
+// buttons
+.btn-light
+	position: relative
+	border: none
+	background-color: var(--bg)
+	text-transform: uppercase
+	line-height: 1.1
+	color: #000
+	font-weight: var(--bold)
+	padding: 0 .625rem
+	border-radius: 0
+	height: 4.125rem
+	font-size: 1rem
+	z-index: 3
+	+center
+	span
+		padding: 0 1.875rem
+	&::before
+		content: ''
+		width: .625rem
+		height: .625rem
+		background-color: var(--accent-1)
+		display: block
+		position: absolute
+		bottom: .625rem
+		left: .625rem
+		transition: 0.5s ease-in-out
+	&:hover
+		&::before
+			width: calc(100% - 1.25rem)
+
+.btn-light-border
+	position: relative
+	border: none
+	background-color: var(--bg)
+	text-transform: uppercase
+	line-height: 1.1
+	color: #000
+	border: .0625rem solid #000
+	font-weight: var(--bold)
+	padding: 0 .625rem
+	border-radius: 0
+	height: 4.125rem
+	font-size: 1rem
+	z-index: 3
+	+center
+	span
+		padding: 0 1.875rem
+	&::before
+		content: ''
+		width: .625rem
+		height: .625rem
+		background-color: var(--accent-1)
+		display: block
+		position: absolute
+		bottom: .625rem
+		left: .625rem
+		transition: 0.5s ease-in-out
+	&:hover
+		&::before
+			width: calc(100% - 1.25rem)
+
+.btn-close
+	width: 3.25rem
+	height: 3.25rem
+	border-radius: 0
+	margin: 0 !important
+	padding: 0 !important
+	opacity: 1
+	background: none
+	+center
+	.box
+		width: 2rem
+
+.link
+	position: relative
+	text-transform: uppercase
+	line-height: 1.1
+	color: #000
+	font-weight: var(--bold)
+	height: 2rem
+	font-size: 1rem
+	display: flex
+	justify-content: center
+	border: none
+	background-color: transparent
+	span
+		padding: 0 1.875rem
+	&::before
+		content: ''
+		min-width: .625rem
+		height: .625rem
+		background-color: var(--accent-1)
+		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		transition: 0.5s ease-in-out
+	&:hover
+		&::before
+			min-width: 100%
+
+.video-play-btn
+	width: 3.5rem
+	height: 3.5rem
+	border: .0625rem solid #F7F6F2
+	border-radius: 50%
+	cursor: pointer
+	+center
+	transition: 0.3s ease
+	.icon
+		width: 1rem
+	&:hover
+		background-color: var(--accent-1)
+		border-color: var(--accent-1)
+		svg
+			path
+				fill: var(--light-text)
+
+// labels
+.label
+	letter-spacing: 0.04em
+	text-transform: uppercase
+	padding: .25rem .75rem
+	+center
+	&--accent
+		background-color: var(--color-primary)
+		color: var(--color-text-light)
+	&--gray
+		background-color: var(--color-bg-gray)
+
+// form elements
+.input, .textarea
+	width: 100%
+	display: block
+	padding: 0 0 .625rem 0
+	line-height: 1.1
+	border-radius: 0
+	font-size: 1.25rem
+	border: none
+	background-color: transparent
+	border-bottom: .0625rem solid var(--border)
+	transition: 0.3s ease
+	color: var(--subtext)
+	&::placeholder
+		opacity: 1
+		color: var(--color-border-muted)
+		transition: 0.3s ease
+	&::-webkit-input-placeholder
+		opacity: 1
+		color: var(--color-border-muted)
+		transition: 0.3s ease
+	&::-moz-placeholder
+		opacity: 1
+		color: var(--color-border-muted)
+		transition: 0.3s ease
+	&:-ms-input-placeholder
+		opacity: 1
+		color: var(--color-border-muted)
+		transition: 0.3s ease
+	&:hover
+		background-color: var(--color-bg-gray)
+		border-color: var(--color-border-gray)
+		&::placeholder
+			color: var(--color-text-main)
+		&::-webkit-input-placeholder
+			color: var(--color-text-main)
+		&::-moz-placeholder
+			color: var(--color-text-main)
+		&:-ms-input-placeholder
+			color: var(--color-text-main)
+	&:focus
+		border-color: var(--color-border-dark)
+		background-color: var(--color-bg-main)
+		box-shadow: none
+
+.textarea
+	height: 7.5rem
+	padding: 0 0 .625rem 0
+
+.radio-btn
+	label
+		height: auto
+		background-color: transparent
+		padding: 0
+		border-radius: 0
+		padding: 0
+		margin: 0
+		border: none
+		color: var(--color-text-muted)
+		font-family: var(--font-main)
+		transition: 0.3s ease
+		letter-spacing: 0.04em
+		text-align: left
+		+center-stroke
+		.ui-checkboxradio-icon-space
+			min-width: .5rem
+			display: inline-block
+		.ui-checkboxradio-icon
+			min-width: 1.1875rem
+			height: 1.1875rem
+			margin: 0
+			padding: 0
+			box-shadow: inset 0px 0px .25rem rgba(64, 121, 159, 0.15)
+			border: .0625rem solid var(--color-border-dark)
+		&.ui-checkboxradio-checked
+			.ui-icon
+				width: 1.1875rem
+				height: 1.1875rem
+				background-color: transparent
+				border: .0625rem solid var(--color-border-dark)
+				&::before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					margin: auto
+					background-color: var(--color-bg-dark)
+					border-radius: 50%
+					width: .6875rem
+					height: .6875rem
+			&:hover
+				.ui-icon
+					width: 1.1875rem
+					height: 1.1875rem
+					background-color: transparent
+					border: .0625rem solid var(--color-border-dark)
+					&::before
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						margin: auto
+						background-color: var(--color-bg-dark)
+						border-radius: 50%
+						width: .6875rem
+						height: .6875rem
+		&.ui-visual-focus
+			box-shadow: none
+		&.ui-state-active
+			background-color: transparent
+			color: var(--color-text-main)
+			&:hover
+				background-color: transparent
+				color: var(--color-text-main)
+				border: none
+			.color
+				border-color: var(--color-border-dark)
+		&:hover
+			background-color: transparent
+			color: var(--color-text-main)
+			border: none
+	&-noicon
+		label
+			height: 3.375rem
+			background-color: var(--color-bg-gray)
+			letter-spacing: 0.02em
+			color: var(--color-text-muted)
+			padding: 0
+			border-radius: 0
+			+center
+			padding: 0 1rem
+			margin: 0
+			border: none
+			&.ui-checkboxradio-checked
+				background-color: var(--color-bg-dark)
+				color: var(--color-text-light)
+			&.ui-visual-focus
+				box-shadow: none
+			&.ui-state-active
+				background-color: var(--color-bg-dark)
+				color: var(--color-text-light)
+				&:hover
+					background-color: var(--color-bg-dark)
+					color: var(--color-text-light)
+					border: none
+			&:hover
+				background-color: var(--color-primary)
+				color: var(--color-text-light)
+				border: none
+
+.checkbox
+	label
+		margin: 0
+		padding: 0
+		background: transparent
+		border: none
+		border-radius: 0
+		color: var(--color-text-muted)
+		display: flex
+		align-items: center
+		gap: .5rem
+		line-height: 1
+		transition: 0.3s ease
+		font-family: var(--font-main)
+		letter-spacing: 0.04em
+		&:hover
+			border: none
+			color: var(--color-text-muted)
+			background-color: transparent
+		&.ui-state-focus
+			box-shadow: none
+		.ui-checkboxradio-icon-space
+			display: none
+		.ui-checkboxradio-icon
+			width: 1.25rem
+			height: 1.25rem
+			border-radius: 0
+			box-shadow: 0px 0px .25rem 0px rgba(64, 121, 159, 0.15) inset
+			border: none
+			background-color: var(--color-bg-gray)
+			margin: 0
+		&.ui-state-active
+			.ui-checkboxradio-icon
+				background-color: #101F38
+				background-image: url(../img/interface/check.svg)
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 70%
+			&:hover
+				border: none
+				color: var(--color-text-muted)
+				background-color: transparent
+
+.checkbox-privacy
+	label
+		margin: 0
+		padding: 0
+		background: transparent
+		border: none
+		border-radius: 0
+		color: var(--color-text-muted)
+		line-height: 1
+		font-size: 1rem
+		transition: 0.3s ease
+		font-family: var(--font-main)
+		letter-spacing: 0.04em
+		text-align: left
+		a
+			color: var(--color-text-muted)
+			text-decoration: underline
+		&:hover
+			border: none
+			color: var(--color-text-main)
+			background-color: transparent
+			a
+				color: var(--color-text-main)
+				text-decoration: underline
+		&.ui-state-focus
+			box-shadow: none
+			a
+				color: var(--color-text-muted)
+				text-decoration: underline
+			&:hover
+				a
+					color: var(--color-text-main)
+					text-decoration: underline
+		.ui-checkboxradio-icon-space
+			display: inline-block
+			width: .5rem
+		.ui-checkboxradio-icon
+			width: 1.125rem
+			height: 1.125rem
+			border-radius: 0
+			box-shadow: 0px 0px .25rem 0px rgba(64, 121, 159, 0.15) inset
+			border: .0625rem solid var(--color-border-dark)
+			background-color: var(--color-bg-main)
+			margin: 0
+		&.ui-state-active
+			color: var(--color-text-main)
+			a
+				color: var(--color-primary)
+				text-decoration: underline
+			.ui-checkboxradio-icon
+				background-color: #101F38
+				border-color: #101F38
+				background-image: url(../img/interface/check.svg)
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 70%
+			&:hover
+				border: none
+				color: var(--color-text-main)
+				background-color: transparent
+				a
+					color: var(--color-primary)
+					text-decoration: underline
+
+// slider elements
+.slider-arrows
+	display: flex
+	z-index: 3
+
+.arrow-prev, .arrow-next
+	cursor: pointer
+	width: 3.5rem
+	height: 3.5rem
+	transition: 0.3s ease
+	z-index: 2
+	+center
+	.box
+		width: 1.125rem
+		height: auto
+	&--border-dark
+		border: .0625rem solid var(--main)
+		&:hover
+			background-color: var(--accent-1)
+			border-color: var(--accent-1)
+			svg
+				path
+					stroke: var(--light-text)
+
+.arrow-prev
+	transform: rotate(180deg)
+.arrow-next
+	border-left: none
+
+.slick-track
+	display: flex
+	margin: 0
+
+.pagination
+	.slick-dots
+		display: flex
+		gap: .625rem
+		li
+			display: flex
+			&.slick-active
+				button
+					background-color: var(--main)
+			button
+				font-size: 0
+				width: .625rem
+				height: .625rem
+				background-color: #D0D0D0
+				border: none
+.socials
+	display: flex
+	gap: .75rem
+.social-btn
+	width: 3.25rem
+	height: 3.25rem
+	+center
+	.box
+		width: 2rem
+	&--accent
+		background-color: var(--color-primary)
+	&--gray
+		background-color: #687683
+		&:hover
+			background-color: var(--color-primary)
+		&:active
+			background-color: #101F38
+
+.fancybox__container
+	z-index: 9999999
+
+@media (max-width: 991.98px)
+	body
+		display: block
+	.container
+		padding: var(--container-padding)
+	.section
+		padding: 3.75rem 0
+		&-pb
+			padding-bottom: 3.75rem
+		&-pt
+			padding-top: 3.75rem
+		&-bpt
+			padding-top: 3.75rem
+		&-bpb
+			padding-bottom: 3.75rem
+		&-bp
+			padding: 3.75rem 0
+		&-line
+			&::before
+				display: none
+		&-first
+			margin-top: 8.75rem
+
+@media (max-width: 575.98px)
+	.item-square
+		&::before
+			margin-right: 1.5rem
+	.input, .textarea
+		font-size: 1.125rem

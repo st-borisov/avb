@@ -1,0 +1,42 @@
+/* COLORS */
+:root {
+	// Основные цвета
+	--accent-1: #85BC25;
+
+	// Текст
+	--main: #080808;
+	--subtext: #1B1B1B;
+	--white: #fff;
+	--light-text: #F7F6F2;
+
+	// Границы
+	--border: #D0D0D0;
+
+	// Фоны
+	--bg: #F7F6F2;
+	--dark: #000;
+}
+
+/* TYPOGRAPHY */
+:root {
+	--font-main: "Montserrat", Arial, sans-serif;
+
+	--light: 300;
+	--reg: 400;
+	--med: 500;
+	--semi: 600;
+	--bold: 700;
+	--extra: 800;
+	--black: 900;
+}
+
+/* LAYOUT / SIZES */
+
+:root {
+	// Контейнер
+	--container-desktop: 111.5rem;
+	--container-tablet: 100%;
+	--container-mobile: 100%;
+
+	--container-padding: 0 1.5rem;
+}

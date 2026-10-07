@@ -1,0 +1,35 @@
+.banner-about
+	height: 57.5rem
+	background-image: url(../img/index-page/banner-about/bg-image.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	position: relative
+	& > div 
+		height: 100%
+		& > div 
+			height: 100%
+	&::after
+		content: ''
+		background-color: rgba(0, 0, 0, 0.3)
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+	&__block
+		z-index: 1
+		position: relative
+		height: 100%
+	&__title
+		color: var(--light-text)
+		max-width: 34.375rem
+		width: 100%
+
+@media (max-width: 991.98px)
+	.banner-about 
+		height: 45rem
+
+@media (max-width: 575.98px)
+	.banner-about 
+		height: 30.3125rem

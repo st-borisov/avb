@@ -1,0 +1,99 @@
+.accordion
+	position: relative
+	&-item
+		border: none
+		background-color: transparent
+		+col-two
+		&:last-child
+			.accordion-button
+				border: none
+	&-button
+		position: relative
+		border: none
+		background-color: transparent
+		text-transform: uppercase
+		line-height: 1.1
+		color: var(--main)
+		font-weight: var(--bold)
+		padding: 0 2.5rem 0 1.625rem
+		border-radius: 0
+		height: 6.375rem
+		font-size: 1.25rem
+		letter-spacing: -0.03em
+		+center
+		border-bottom: .0625rem solid var(--border)
+		span
+			position: relative
+			padding: 0 3.5rem
+			&::before
+				content: ''
+				min-width: .625rem
+				height: .625rem
+				background-color: var(--accent-1)
+				display: block
+				position: absolute
+				bottom: -0.875rem
+				left: 0
+		&::after
+			opacity: 0
+		&:hover
+			color: var(--accent-1)
+		&:focus
+			box-shadow: none
+	&-collapse
+		position: absolute
+		top: 0
+		right: 0
+		width: 50%
+		opacity: 0
+		transition: 0.3s ease
+	&-body
+		padding: 5rem
+
+.accordion-button:not(.collapsed)
+	background-color: transparent
+	color: var(--accent-1)
+	border-color: var(--border)
+	box-shadow: none
+
+.accordion-collapse.show
+	opacity: 1
+
+@media (max-width: 991.98px)
+	.accordion
+		width: 100vw
+		margin-left: -1.5rem
+		&-item
+			+col-one
+			border-bottom: .0625rem solid var(--border)
+			&:last-child
+				border: none
+		&-collapse
+			position: initial
+			width: 100%
+		&-body
+			padding: 1.875rem 1.5rem 2.5rem
+		&-button
+			border: none
+			min-height: 5.375rem
+			height: auto
+			padding: 1.5rem 1.5rem .625rem
+			justify-content: flex-start
+			align-items: flex-start
+			span
+				padding: 0 1.25rem
+			&::after
+				opacity: 1
+				background-image: url(../img/interface/accordion-arrow.svg)
+				background-size: .625rem
+				width: .625rem
+				height: .625rem
+
+	.accordion-button:not(.collapsed)::after
+		background-image: url(../img/interface/accordion-arrow-active.svg)
+		transform: none
+
+@media (max-width: 575.98px)
+	.accordion
+		&-button
+			font-size: 1.125rem

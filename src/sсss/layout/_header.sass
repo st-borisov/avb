@@ -1,0 +1,358 @@
+.navbar
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	max-width: 100%
+	z-index: 9999
+	padding: 0
+	border-bottom: .0625rem solid var(--border)
+	&-brand
+		padding: 0
+		margin: 0
+		.box
+			width: 10.625rem
+		&-text
+			text-transform: uppercase
+			letter-spacing: -0.03em
+			line-height: 1.1
+			font-size: 1.25rem
+			font-weight: var(--bold)
+			max-width: 21.875rem
+			width: 100%
+	&__phone
+		&--1
+			font-size: 1.25rem
+			line-height: 1.1
+			text-transform: uppercase
+			color: var(--main)
+			font-weight: var(--bold)
+			height: 2.25rem
+		&--2
+			font-size: 1.25rem
+			line-height: 1.1
+			text-transform: uppercase
+			color: var(--main)
+			font-weight: var(--bold)
+			height: 2.25rem
+			margin-left: 4.6875rem
+	&__btn
+		font-size: 1.25rem
+		color: var(--main)
+		height: 2.25rem
+		line-height: 1.1
+		&::before
+			left: auto
+			right: 0
+	&__right
+		width: 100%
+		border-left: .0625rem solid var(--border)
+	&--index
+		.navbar
+			&-brand
+				&-text
+					color: var(--light-text)
+			&__phone
+				&--1
+					color: var(--light-text)
+				&--2
+					color: var(--light-text)
+			&__btn
+				color: var(--light-text)
+			&__right
+				border: none
+
+.menu-block
+	position: fixed
+	width: calc((100% - 110rem) / 2)
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 101
+	border-right: .0625rem solid var(--border)
+	&.theme-dark
+		.navbar-toggler
+			&-text
+				color: var(--main)
+			&-icon
+				svg
+					path
+						fill: var(--main)
+	&.theme-light
+		.navbar-toggler
+			&-text
+				color: var(--light-text)
+			&-icon
+				svg
+					path
+						fill: var(--light-text)
+	.navbar-toggler
+		height: 100%
+		width: 100%
+		+center
+		border-radius: 0
+		border: none
+		padding: 0
+		transition: 0.3s ease
+		&:hover
+			background-color: rgba(247, 246, 242, 0.3)
+			.navbar-toggler
+				&-text
+					color: var(--main)
+				&-icon
+					svg
+						path
+							fill: var(--main)
+		&-wrap
+			display: flex
+			align-items: center
+			gap: 1rem
+			transform: rotate(-90deg)
+			width: max-content
+		&-text
+			font-size: 1.5rem
+			letter-spacing: 0.06em
+			text-transform: uppercase
+			font-weight: var(--extra)
+			color: var(--light-text)
+			line-height: 1.1
+			transition: 0.3s ease
+		&-icon
+			width: 1.875rem
+			height: .5rem
+			background: none
+			border-radius: 0
+			border: none
+			padding: 0
+	.offcanvas
+		background-color: var(--dark)
+		color: var(--light-text)
+		width: 100%
+		border: none
+		&::before
+			content: ''
+			width: .0625rem
+			height: 100%
+			border-left: .0625rem solid #F7F6F2
+			position: absolute
+			left: 5rem
+			top: 0
+		&::after
+			content: ''
+			width: .0625rem
+			height: 100%
+			border-right: .0625rem solid #F7F6F2
+			position: absolute
+			right: 5rem
+			top: 0
+		&-body
+			padding: 9.375rem 5rem
+			+column
+			justify-content: center
+			position: relative
+			&::before
+				content: ''
+				width: 100%
+				height: .0625rem
+				border-bottom: .0625rem solid #F7F6F2
+				position: absolute
+				left: 0
+				bottom: 5rem
+		.btn-close
+			position: absolute
+			top: 10.3125rem
+			right: 6.25rem
+			width: 3rem
+			height: 3rem
+			z-index: 10
+			.icon
+				width: 100%
+			&:hover
+				opacity: 1
+				svg
+					path
+						stroke: var(--accent-1)
+		.navbar-nav
+			display: block
+			column-count: 2
+			gap: 10rem
+			.nav-link
+				line-height: 1.4
+				font-weight: var(--bold)
+				text-transform: uppercase
+				color: var(--light-text)
+				padding: 1.25rem 0
+				&:hover
+					color: var(--accent-1)
+	&__content
+		padding: 0 5rem
+
+.fixed-btn
+	position: fixed
+	width: calc((100% - 110rem) / 2)
+	height: 100%
+	top: 0
+	right: 0
+	z-index: 101
+	//border-left: .0625rem solid var(--border)
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	opacity: 1
+	visibility: visible
+	transition: opacity 0.5s ease, visibility 0.5s ease
+	&__wrap
+		margin-top: 8.75rem
+		transform: rotate(90deg)
+		padding: 0 3.75rem
+		border: none
+		background-color: transparent
+	&.hidden
+		opacity: 0
+		visibility: hidden
+		pointer-events: none
+	.btn-light
+		height: 5rem
+		background-color: transparent
+		white-space: nowrap
+		padding: 0
+		transition: 0.3s ease
+		&::before
+			bottom: 1.0625rem
+	&.theme-dark
+		.btn-light
+			color: var(--main)
+	&.theme-light
+		.btn-light
+			color: var(--light-text)
+
+.right-line-fixed
+	position: fixed
+	right: calc((100% - 110rem) / 2)
+	top: 0
+	z-index: 101
+	border-right: .0625rem solid var(--border)
+	height: 100%
+	width: .0625rem
+
+body
+	&.active
+		.navbar
+			position: fixed
+			&-brand
+				&-text
+					color: var(--light-text)
+			&__phone
+				&--1, &--2
+					color: var(--light-text)
+			&__btn
+				color: var(--light-text)
+		.fixed-btn
+			opacity: 0
+		.right-line-fixed
+			opacity: 0
+
+@media (max-width: 991.9808px)
+	.navbar
+		&-brand
+			.box
+				width: 6.25rem
+		&__left
+			border-right: .0625rem solid var(--border)
+			padding-right: 1.5rem
+			height: 100%
+		&__right
+			border: none
+		&__wrap
+			border-left: .0625rem solid var(--border)
+			padding-left: 1.5rem
+		&-toggler
+			border: none
+			padding: 0
+			margin: 0
+			border-radius: 0
+			&:focus
+				box-shadow: none
+			&-icon, &-close
+				width: 2.5rem
+				height: 2.5rem
+				background: none
+			&-close
+				display: none
+			&.active
+				.navbar-toggler
+					&-icon
+						display: none
+					&-close
+						display: flex
+	.menu-block
+		width: 0
+		border: none
+		.offcanvas
+			padding-top: 5rem
+			height: max-content
+			&::before, &::after
+				display: none
+			.btn-close
+				display: none
+			&-body
+				padding: 5rem 1.5rem 3.75rem
+				&::before
+					display: none
+			.navbar-nav
+				column-count: 1
+				.nav-link
+					padding: .9375rem 0
+		&__content
+			padding: 0
+	.fixed-btn
+		position: absolute
+		width: 100%
+		height: 5rem
+		bottom: 0
+		left: 0
+		right: auto
+		top: auto
+		border: none
+		display: none
+		&.hidden
+			opacity: 1
+		&__wrap
+			margin: 0
+			transform: rotate(0deg)
+		.btn-light
+			color: var(--light-text)
+			&::before
+				left: auto
+				right: 0
+				bottom: 1.25rem
+	.offcanvas-backdrop.show
+		opacity: 0.3
+
+@media (max-width: 575.98px)
+	.navbar
+		&-brand
+			.box
+				width: 4.0625rem
+		&__phone
+			&--1
+				font-size: 1rem
+				height: auto
+				&::before
+					bottom: -0.875rem
+				span
+					padding: 0 .625rem
+			&--2
+				font-size: 1rem
+				height: auto
+				margin-left: 1.25rem
+				&::before
+					bottom: -0.875rem
+				span
+					padding: 0 .625rem
+
+	.fixed-btn
+		.btn-light
+			&:hover
+				&::before
+					width: 100%

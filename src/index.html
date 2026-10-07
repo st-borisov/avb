@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#F7F6F2" id="themeColor">
+	<title>Главная</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="">
+
+	<header class="navbar navbar--index" id="header">
+		<div class="container">
+			<div class="row w-100 g-0 align-items-lg-center align-items-stretch justify-content-between">
+				<div class="col-lg-6 col-auto d-flex align-items-center">
+					<div class="navbar__left d-flex align-items-center ps-lg-5 ms-lg-5">
+						<a class="navbar-brand" href="#">
+							<span class="box">
+								<img src="img/header/logo-light.svg" alt="лого">
+							</span>
+						</a>
+						<p class="navbar-brand-text d-none d-lg-block ps-lg-5 ms-lg-3">Архитектурно — строительная
+							компания</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-auto d-flex justify-content-center justify-content-lg-between">
+					<div
+						class="navbar__right d-flex align-items-lg-end justify-content-lg-between p-lg-4 align-items-center justify-content-center">
+						<div class="navbar__phones d-flex align-items-end">
+							<a href="tel:939993" class="link navbar__phone--1"><span>93-99-93</span></a>
+							<a href="tel:+7922939993" class="link navbar__phone--2"><span>+7 922
+									93-99-93</span></a>
+						</div>
+						<button class="navbar__btn link d-none d-lg-flex">
+							<span>Связаться с нами</span>
+						</button>
+					</div>
+				</div>
+				<div class="col-auto d-lg-none">
+					<div class="navbar__wrap py-3 d-lg-none d-flex">
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+							<span class="navbar-toggler-icon icon">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M5 18H35V16H5V18Z" fill="#F7F6F2" />
+									<path d="M5 24H35V22H5V24Z" fill="#F7F6F2" />
+								</svg>
+							</span>
+							<div class="navbar-toggler-close icon">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.07773 9.00001L31 31M9 31L30.9223 9" stroke="white" stroke-width="2" />
+								</svg>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="menu-block">
+		<button class="navbar-toggler d-none d-lg-flex" type="button" data-bs-toggle="offcanvas"
+			data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			<div class="navbar-toggler-wrap">
+				<span class="navbar-toggler-text">Меню</span>
+				<span class="navbar-toggler-icon icon">
+					<svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M30 6L0 6L8.74228e-08 8.00001L30 8L30 6Z" fill="#F7F6F2" />
+						<path d="M30 2.50336e-06L0 3.8147e-06L8.74228e-08 2.00001L30 2L30 2.50336e-06Z"
+							fill="#F7F6F2" />
+					</svg>
+				</span>
+			</div>
+		</button>
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+			aria-labelledby="offcanvasNavbarLabel">
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+				<div class="icon">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M24 24L10 10M24 24L10 38M24 24L38 10M24 24L38 38" stroke="#D0D0D0" stroke-width="2" />
+					</svg>
+				</div>
+			</button>
+			<div class="offcanvas-body">
+				<div class="menu-block__content">
+					<ul class="navbar-nav p-0 m-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">О компании</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Реализованные объекты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Отзывы</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Партнеры и инженерные решения</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Строительство под ключ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Коммерческое строительство</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Отдельные строительные работы</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fixed-btn">
+		<button class="fixed-btn__wrap">
+			<span class="btn-light">
+				<span>Связаться с нами</span>
+			</span>
+		</button>
+	</div>
+
+	<div class="right-line-fixed"></div>
+
+	<main>
+
+		<section class="main-screen section-line fixed-btn-hidden" data-theme="dark">
+			<div class="main-screen__wrapper section-pb">
+				<div class="container">
+					<div class="row g-0">
+						<div class="col-12">
+							<div class="main-screen__video">
+								<div class="box">
+									<video loop muted playsinline autoplay>
+										<source src="video/main-video.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row g-0">
+						<div class="col-lg-6">
+							<div class="main-screen__desc ps-lg-5 ms-lg-5">
+								<p class="main-screen__text d-lg-none animate">Архитектурно — <br>строительная компания</p>
+								<h1 class="main-screen__title title-page mt-3 mt-lg-0 animate">Строим частные и коммерческие
+									<span>объекты</span>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fixed-btn d-lg-none">
+				<button class="fixed-btn__wrap">
+					<span class="btn-light">
+						<span>Связаться с нами</span>
+					</span>
+				</button>
+			</div>
+		</section>
+
+		<section class="section about-main section-line" data-theme="light">
+			<div class="container">
+				<div class="row g-lg-0 g-2">
+					<div class="col-lg-6 d-flex flex-column align-items-center order-2 order-lg-1">
+						<div class="about-main__content">
+							<div class="about-main__desc pt-5 pe-lg-5">
+								<div class="about-main__list">
+									<div class="row g-5">
+										<div class="col-12">
+											<div class="about-main__item animate">
+												<p class="about-main__name item-square">Строим частные и коммерческие
+													объекты
+												</p>
+												<div class="about-main__text text mt-3">
+													<p>Мы занимаемся проектированием и строительством частных
+														и коммерческих
+														зданий, предлагая полный спектр услуг от идеи
+														до завершения строительства, объединяя архитектуру
+														и практический
+														строительный опыт.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="about-main__item animate">
+												<p class="about-main__name item-square">Используем собственную
+													строительную технику
+												</p>
+												<div class="about-main__text text mt-3">
+													<p>Мы занимаемся проектированием и строительством частных
+														и коммерческих зданий, предлагая полный спектр услуг от идеи
+														до завершения строительства, объединяя архитектуру
+														и практический строительный опыт.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="about-main__item animate">
+												<p class="about-main__name item-square">Работаем в Пензе, Москве
+													и других регионах
+												</p>
+												<div class="about-main__text text mt-3">
+													<p>Мы занимаемся проектированием и строительством частных
+														и коммерческих зданий, предлагая полный спектр услуг от идеи
+														до завершения строительства, объединяя архитектуру
+														и практический строительный опыт.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about-main__experience mt-5">
+									<p class="about-main__num">>15 <span>ЛЕТ</span></p>
+									<p class="about-main__sub mt-2">практического опыта</p>
+								</div>
+							</div>
+							<div class="about-main__phrase">
+								<div class="icon">
+									<img src="img/index-page/about-main/phrase.svg"
+										alt="чувство прекрасного - бесценно">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 order-lg-2 order-1">
+						<div class="about-main__image">
+							<div class="box">
+								<img src="img/index-page/about-main/image.jpg" alt="фото">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-pb section-bpt banner-about section-line" data-theme="dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div
+							class="banner-about__block d-flex flex-column justify-content-between align-items-start ps-lg-5 ms-lg-5">
+							<h2 class="section-title banner-about__title animate">От архитектуры — <span>к построенному
+									объекту</span></h2>
+							<a href="#" class="banner-about__btn btn-light mt-5 animate">
+								<span>Узнать больше о нас</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services-main section-bpt section-line" data-theme-left="light" data-theme-right="dark">
+			<div class="container">
+				<div class="row g-lg-0 g-4">
+					<div class="col-lg-6 d-flex flex-column justify-content-between">
+						<div class="services-main__text text ps-lg-5 ms-lg-5 me-lg-5 pe-lg-5 animate">
+							<p>Мы занимаемся проектированием и строительством частных и коммерческих зданий, предлагая
+								полный спектр услуг от идеи
+								до завершения строительства, объединяя архитектуру и практический строительный опыт.</p>
+						</div>
+						<div class="services-main__images-wrapper d-lg-block d-none">
+							<div class="services-main__image">
+								<div class="box">
+									<img src="img/index-page/services-main/image.jpg" alt="фото">
+								</div>
+							</div>
+							<div class="services-main__image">
+								<div class="box">
+									<img src="img/index-page/services-main/image-2.jpg" alt="фото">
+								</div>
+							</div>
+							<div class="services-main__image">
+								<div class="box">
+									<img src="img/index-page/services-main/image-3.jpg" alt="фото">
+								</div>
+							</div>
+							<div class="services-main__image">
+								<div class="box">
+									<img src="img/index-page/services-main/image-4.jpg" alt="фото">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="services-main__content">
+							<h2 class="section-title services-main__title animate ps-lg-5 ms-lg-5 me-lg-5 pe-lg-5 mb-lg-5 mb-4">
+								Наши<br>
+								<span>услуги</span>
+							</h2>
+							<div class="services-main__slider ps-lg-5 ms-lg-5 me-lg-5 pe-lg-5">
+								<div class="services-main__slide p-lg-5 p-3">
+									<div class="services-main__block d-flex flex-column justify-content-between h-100">
+										<div class="services-main__top">
+											<p class="services-main__name name pe-4">Проектирование</p>
+										</div>
+										<div class="services-main__bottom">
+											<div class="services-main__text text">
+												<p>Архитектурные и конструктивные решения для частных и коммерческих
+													объектов.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="services-main__slide p-lg-5 p-3">
+									<div class="services-main__block d-flex flex-column justify-content-between h-100">
+										<div class="services-main__top">
+											<p class="services-main__name name pe-4">Строительство под ключ</p>
+										</div>
+										<div class="services-main__bottom">
+											<div class="services-main__text text">
+												<p>Полный цикл строительства — от подготовки участка до завершения
+													объекта.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="services-main__slide p-lg-5 p-3">
+									<div class="services-main__block d-flex flex-column justify-content-between h-100">
+										<div class="services-main__top">
+											<p class="services-main__name name pe-4">Отдельные строительные работы</p>
+										</div>
+										<div class="services-main__bottom">
+											<div class="services-main__text text">
+												<p>Выполнение отдельных этапов строительства: фундамент, коробка,
+													кровля,
+													инженерия и отделка.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="services-main__slide p-lg-5 p-3">
+									<div class="services-main__block d-flex flex-column justify-content-between h-100">
+										<div class="services-main__top">
+											<p class="services-main__name name pe-4">Девелоперские проекты</p>
+										</div>
+										<div class="services-main__bottom">
+											<div class="services-main__text text">
+												<p>Строительство домов и коттеджных кварталов</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="services-main__pagination pagination d-lg-none mt-3">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects section-bp section-line" data-theme="light">
+			<div class="container">
+				<div class="row mb-lg-5 mb-4">
+					<div class="col-lg-6">
+						<div class="projects__header ps-lg-5 ms-lg-5">
+							<h2 class="section-title projects__title animate">Реализованные <span>проекты</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row g-lg-5 g-3 mb-lg-5 mb-4">
+					<div class="col-lg-6">
+						<div class="project-card item animate">
+							<a href="#" class="item-link"></a>
+							<div class="project-card__wrapper">
+								<div class="project-card__image">
+									<div class="box">
+										<img src="img/projects/image.jpg" alt="фото">
+									</div>
+								</div>
+								<div class="project-card__desc d-flex justify-content-between align-items-end">
+									<p class="project-card__name">Пензенская обл.,
+										<br>с. Рамзай
+									</p>
+									<p class="project-card__square">272м²</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="project-card item animate">
+							<a href="#" class="item-link"></a>
+							<div class="project-card__wrapper">
+								<div class="project-card__image">
+									<div class="box">
+										<img src="img/projects/image.jpg" alt="фото">
+									</div>
+								</div>
+								<div class="project-card__desc d-flex justify-content-between align-items-end">
+									<p class="project-card__name">Пензенская обл.,
+										<br>с. Рамзай
+									</p>
+									<p class="project-card__square">272м²</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="project-card item animate">
+							<a href="#" class="item-link"></a>
+							<div class="project-card__wrapper">
+								<div class="project-card__image">
+									<div class="box">
+										<img src="img/projects/image.jpg" alt="фото">
+									</div>
+								</div>
+								<div class="project-card__desc d-flex justify-content-between align-items-end">
+									<p class="project-card__name">Пензенская обл.,
+										<br>с. Рамзай
+									</p>
+									<p class="project-card__square">272м²</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="project-card item animate">
+							<a href="#" class="item-link"></a>
+							<div class="project-card__wrapper">
+								<div class="project-card__image">
+									<div class="box">
+										<img src="img/projects/image.jpg" alt="фото">
+									</div>
+								</div>
+								<div class="project-card__desc d-flex justify-content-between align-items-end">
+									<p class="project-card__name">Пензенская обл.,
+										<br>с. Рамзай
+									</p>
+									<p class="project-card__square">272м²</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="projects__bottom d-flex justify-content-center">
+							<a href="#" class="projects__btn btn-light-border animate"><span>Смотреть все проекты</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="commercial section-bpt section-line" data-theme-left="light" data-theme-right="dark">
+			<div class="container">
+				<div class="row g-0 mb-lg-5 pb-lg-5 mb-4">
+					<div class="col-lg-6">
+						<div
+							class="commercial__header animate h-100 ps-lg-5 ms-lg-5 me-lg-5 pe-lg-5 d-flex flex-column justify-content-between">
+							<h2 class="commercial__title section-title">Коммерческое <span>строительство</span></h2>
+							<div class="commercial__text text mt-4 mt-lg-5">
+								<p>Организуем процесс строительства так, чтобы здания были функциональными, надёжными
+									и соответствовали задачам бизнеса.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="commercial__desc animate ps-lg-5 ms-lg-5 me-lg-5 pe-lg-5">
+							<p class="commercial__name">Проектируем. Строим. Реконструируем</p>
+							<div class="commercial__list text mt-lg-5 mt-4">
+								<ul>
+									<li>ОФИСНЫЕ ЗДАНИЯ</li>
+									<li>АНГАРЫ</li>
+									<li>ПРИОЗВОДСТВЕННЫЕ ПОМЕЩЕНИЯ</li>
+									<li>ОБЩЕСТВЕННЫЕ ПРОСТРАНСТВА</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="commercial__slider animate">
+							<div class="commercial__slide">
+								<div class="project-card item">
+									<a href="#" class="item-link"></a>
+									<div class="project-card__wrapper">
+										<div class="project-card__image">
+											<div class="box">
+												<img src="img/index-page/commercial/image-1.jpg" alt="фото">
+											</div>
+										</div>
+										<div class="project-card__desc d-flex justify-content-between align-items-end">
+											<p class="project-card__name">Реконструкция «Бизнес центра»<br>
+												Пенза
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="commercial__slide">
+								<div class="project-card item">
+									<a href="#" class="item-link"></a>
+									<div class="project-card__wrapper">
+										<div class="project-card__image">
+											<div class="box">
+												<img src="img/index-page/commercial/image-2.jpg" alt="фото">
+											</div>
+										</div>
+										<div class="project-card__desc d-flex justify-content-between align-items-end">
+											<p class="project-card__name">Реконструкция «Бизнес центра»<br>
+												Пенза
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="commercial__slide">
+								<div class="project-card item">
+									<a href="#" class="item-link"></a>
+									<div class="project-card__wrapper">
+										<div class="project-card__image">
+											<div class="box">
+												<img src="img/index-page/commercial/image-1.jpg" alt="фото">
+											</div>
+										</div>
+										<div class="project-card__desc d-flex justify-content-between align-items-end">
+											<p class="project-card__name">Реконструкция «Бизнес центра»<br>
+												Пенза
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="commercial__slide">
+								<div class="project-card item">
+									<a href="#" class="item-link"></a>
+									<div class="project-card__wrapper">
+										<div class="project-card__image">
+											<div class="box">
+												<img src="img/index-page/commercial/image-2.jpg" alt="фото">
+											</div>
+										</div>
+										<div class="project-card__desc d-flex justify-content-between align-items-end">
+											<p class="project-card__name">Реконструкция «Бизнес центра»<br>
+												Пенза
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="commercial__pagination pagination d-flex justify-content-center d-lg-none mt-3">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+		<section class="section-line pt-lg-5 pt-4 section-bpb">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="commercial__bottom d-flex justify-content-center">
+							<a href="#" class="commercial__btn btn-light-border animate"><span>Подробнее</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-bpt team section-line" data-theme-left="dark" data-theme-right="light">
+			<div class="container">
+				<div class="row mb-lg-5 pb-lg-5 mb-4">
+					<div class="col-12">
+						<div class="team__header ps-lg-5 ms-lg-5">
+							<h2 class="section-title team__title animate">Наша<br><span>Команда</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row g-lg-0 g-4">
+					<div class="col-lg-6">
+						<div class="team__image">
+							<div class="box">
+								<img src="img/team/image.jpg" alt="фото">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div
+							class="team__desc ps-lg-5 ms-lg-5 pe-lg-5 me-lg-5 d-flex flex-column justify-content-between h-100 pb-lg-5">
+							<div class="team__text text animate">
+								<p>
+									«Меня зовут Алексей Богословский, я основатель и руководитель
+									архитектурно-строительной
+									компании AVB.
+								</p>
+								<p>
+									Мой профессиональный путь в строительстве начался более пятнадцати лет назад.
+									За это время я прошёл разные этапы работы
+									на строительных объектах — от практической работы на площадке до управления
+									строительными проектами и организации
+									полного цикла строительства.
+								</p>
+								<p>
+									Этот опыт позволяет мне и нашей команде выстраивать процесс работы последовательно
+									и грамотно — от архитектурной идеи
+									до завершения строительства. Наша задача — создавать надёжные и продуманные объекты,
+									которые будут служить своим
+									владельцам долгие годы.»
+								</p>
+							</div>
+							<div
+								class="team__group d-flex justify-content-between align-items-end pb-lg-5 mt-4 mt-lg-0">
+								<div class="team__phrase">
+									<div class="icon">
+										<img src="img/team/phrase.svg" alt="фраза">
+									</div>
+								</div>
+								<p class="team__name ms-3 ms-sm-0">Основатель и руководитель AVB</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-bpt section-pb team-banner section-line" data-theme="dark">
+			<div class="container h-100">
+				<div class="row h-100">
+					<div class="col-lg-6 h-100">
+						<div
+							class="team-banner__desc ps-lg-5 ms-lg-5 pe-lg-5 me-lg-5 d-flex flex-column justify-content-end h-100">
+							<div class="team-banner__text text animate">
+								<p>Наша команда — это профессионалы с большим опытом работы в проектах разного уровня
+									сложности и масштаба.</p>
+							</div>
+							<div class="team-banner__image mt-lg-0 mt-4">
+
+							</div>
+							<p class="team-banner__name name mt-lg-5 mt-4 animate">Мы готовы помочь вам реализовать самые смелые
+								ваши мечты!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-pt section-bpb section-line benefits" data-theme="light">
+			<div class="container">
+				<div class="row mb-lg-0 mb-4">
+					<div class="col-lg-6">
+						<div class="benefits__header ps-lg-5 ms-lg-5 pt-lg-5">
+							<h2 class="section-title benefits__title animate">Собственная <span>строительная техника</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-lg-5 mb-4">
+					<div class="col-12">
+						<div class="benefits__slider animate">
+							<div class="benefits__slide">
+								<div
+									class="benefits__wrapper d-flex align-items-lg-end justify-content-between flex-lg-row flex-column-reverse">
+									<div class="item-square benefits__text mt-3 mt-lg-0">
+										<div class="text">
+											<p>Мы работаем со своим парком строительной техники, что обеспечивает
+												контроль
+												сроков и стабильность на всех этапах
+												строительства.</p>
+										</div>
+									</div>
+									<div class="benefits__image">
+										<div class="box">
+											<img src="img/benefits/image.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="benefits__slide">
+								<div
+									class="benefits__wrapper d-flex align-items-lg-end justify-content-between flex-lg-row flex-column-reverse">
+									<div class="item-square benefits__text mt-3 mt-lg-0">
+										<div class="text">
+											<p>22222Мы работаем со своим парком строительной техники, что обеспечивает
+												контроль
+												сроков и стабильность на всех этапах
+												строительства.</p>
+										</div>
+									</div>
+									<div class="benefits__image">
+										<div class="box">
+											<img src="img/benefits/image.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="benefits__navigation slider-arrows d-lg-flex justify-content-center d-none">
+							<div class="benefits__prev arrow-prev arrow-prev--border-dark">
+								<div class="box">
+									<svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 4.70703L16 4.70703M12 8.70703L16 4.70703L12 0.707031"
+											stroke="#080808" stroke-width="2" />
+									</svg>
+								</div>
+							</div>
+							<div class="benefits__next arrow-next arrow-next--border-dark">
+								<div class="box">
+									<svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 4.70703L16 4.70703M12 8.70703L16 4.70703L12 0.707031"
+											stroke="#080808" stroke-width="2" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="benefits__pagination pagination d-flex justify-content-center d-lg-none"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-line partners" data-theme-left="dark" data-theme-right="light">
+			<div class="container">
+				<div class="row g-0 flex-column-reverse flex-lg-row">
+					<div class="col-lg-6">
+						<div class="partners__items">
+							<div class="row g-lg-0 g-3">
+								<div class="col-lg-4 col-6">
+									<div class="partners__item">
+										<div class="partners__image">
+											<div class="box">
+												<img src="img/partners/logo.svg" alt="лого">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-6">
+									<div class="partners__item">
+										<div class="partners__image">
+											<div class="box">
+												<img src="img/partners/logo.svg" alt="лого">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-6">
+									<div class="partners__item">
+										<div class="partners__image">
+											<div class="box">
+												<img src="img/partners/logo.svg" alt="лого">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-6">
+									<div class="partners__item">
+										<div class="partners__image">
+											<div class="box">
+												<img src="img/partners/logo.svg" alt="лого">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-6">
+									<div class="partners__item">
+										<div class="partners__image">
+											<div class="box">
+												<img src="img/partners/logo.svg" alt="лого">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-6">
+									<div class="partners__item">
+										<div class="partners__image">
+											<div class="box">
+												<img src="img/partners/logo.svg" alt="лого">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div
+							class="partners__desc d-flex flex-column justify-content-between align-items-start ps-lg-5 ms-lg-5 pe-lg-5 me-lg-5 h-100 section-bpt section-pb">
+							<div class="partners__top animate">
+								<h2 class="partners__title section-title">Наши <span>партнеры</span></h2>
+								<div class="partners__text text mt-lg-5 mt-4">
+									<p>В проектах AVB используются только современные инженерные решения и качественные
+										строительные материалы.</p>
+									<p>Мы сотрудничаем с профильными производителями и поставщиками, а также является
+										партнёром и официальным дилером ряда
+										компаний в области инженерных систем и строительных технологий.</p>
+								</div>
+							</div>
+							<a href="#" class="partners__btn btn-light-border mt-5 animate">
+								<span>Подробнее</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-bp reviews section-line" data-theme="light">
+			<div class="container">
+				<div class="row g-4 g-lg-0 align-items-end pb-5 mb-lg-5 mb-3">
+					<div class="col-lg-6">
+						<div class="reviews__header ps-lg-5 ms-lg-5 pe-lg-5 me-lg-5">
+							<h2 class="section-title reviews__title animate"><span>Отзывы</span><br>
+								Наших клиентов<br> и партнеров</h2>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="reviews__desc ps-lg-5 ms-lg-5 pe-lg-5 me-lg-5">
+							<div class="reviews__text text animate">
+								<p>У нас много довольных клиентов и надежных партнеров, которые готовы поделиться своими
+									впечатлениями о сотрудничестве
+									с нами.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-lg-5 mb-3">
+					<div class="col-12">
+						<div class="reviews__slider animate">
+							<div class="reviews__slide">
+								<div class="reviews-card p-lg-5 p-3">
+									<div class="reviews-card__wrapper p-lg-5 d-flex flex-column align-items-start">
+										<p class="reviews-card__name">Иван Иванов</p>
+										<p class="reviews-card__sub mt-2">Одноэтажный дом в КП "Яблони парк"</p>
+										<div class="reviews-card__text text mt-4">
+											<p>Впервые работаю с AVB Строй по совету знакомых, которые остались очень
+												довольны строительством своего дома. Я заказал
+												проект «под ключ», который был реализован в срок и удовлетворил меня
+												в полном объёме. На каждом этапе работ со мной
+												проводилось согласование, что давало мне чёткое представление о том,
+												как и какие работы проводятся на моем участке.
+												Однозначно буду рекомендовать компанию AVB своим знакомым!</p>
+										</div>
+										<a href="#" class="reviews-card__link link mt-4">
+											<span>Смотреть отзыв на авито</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slide">
+								<div class="reviews-card p-lg-5 p-3">
+									<div class="reviews-card__wrapper p-lg-5 d-flex flex-column align-items-start">
+										<p class="reviews-card__name">Иван Иванов</p>
+										<p class="reviews-card__sub mt-2">Одноэтажный дом в КП "Яблони парк"</p>
+										<div class="reviews-card__text text mt-4">
+											<p>Впервые работаю с AVB Строй по совету знакомых, которые остались очень
+												довольны строительством своего
+												дома. Я заказал
+												проект «под ключ», который был реализован в срок и удовлетворил меня
+												в полном объёме. На каждом
+												этапе работ со мной
+												проводилось согласование, что давало мне чёткое представление о том,
+												как и какие работы проводятся
+												на моем участке.
+												Однозначно буду рекомендовать компанию AVB своим знакомым!</p>
+										</div>
+										<a href="#" class="reviews-card__link link mt-4">
+											<span>Смотреть отзыв на авито</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slide">
+								<div class="reviews-card p-lg-5 p-3">
+									<div class="reviews-card__wrapper p-lg-5 d-flex flex-column align-items-start">
+										<p class="reviews-card__name">Иван Иванов</p>
+										<p class="reviews-card__sub mt-2">Одноэтажный дом в КП "Яблони парк"</p>
+										<div class="reviews-card__text text mt-4">
+											<p>Впервые работаю с AVB Строй по совету знакомых, которые остались очень
+												довольны строительством своего дома. Я заказал
+												проект «под ключ», который был реализован в срок и удовлетворил меня
+												в полном объёме. На каждом этапе работ со мной
+												проводилось согласование, что давало мне чёткое представление о том,
+												как и какие работы проводятся на моем участке.
+												Однозначно буду рекомендовать компанию AVB своим знакомым!</p>
+										</div>
+										<a href="#" class="reviews-card__link link mt-4">
+											<span>Смотреть отзыв на авито</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slide">
+								<div class="reviews-card p-lg-5 p-3">
+									<div class="reviews-card__wrapper p-lg-5 d-flex flex-column align-items-start">
+										<p class="reviews-card__name">Иван Иванов</p>
+										<p class="reviews-card__sub mt-2">Одноэтажный дом в КП "Яблони парк"</p>
+										<div class="reviews-card__text text mt-4">
+											<p>Впервые работаю с AVB Строй по совету знакомых, которые остались очень
+												довольны строительством своего
+												дома. Я заказал
+												проект «под ключ», который был реализован в срок и удовлетворил меня
+												в полном объёме. На каждом
+												этапе работ со мной
+												проводилось согласование, что давало мне чёткое представление о том,
+												как и какие работы проводятся
+												на моем участке.
+												Однозначно буду рекомендовать компанию AVB своим знакомым!</p>
+										</div>
+										<a href="#" class="reviews-card__link link mt-4">
+											<span>Смотреть отзыв на авито</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-5 pb-lg-5 pb-3">
+					<div class="col-12">
+						<div class="reviews__navigation slider-arrows d-lg-flex justify-content-center d-none">
+							<div class="reviews__prev arrow-prev arrow-prev--border-dark">
+								<div class="box">
+									<svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 4.70703L16 4.70703M12 8.70703L16 4.70703L12 0.707031"
+											stroke="#080808" stroke-width="2" />
+									</svg>
+								</div>
+							</div>
+							<div class="reviews__next arrow-next arrow-next--border-dark">
+								<div class="box">
+									<svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 4.70703L16 4.70703M12 8.70703L16 4.70703L12 0.707031"
+											stroke="#080808" stroke-width="2" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__pagination pagination d-flex justify-content-center d-lg-none"></div>
+					</div>
+				</div>
+				<div class="row mb-lg-5 mb-3">
+					<div class="col-12">
+						<div class="reviews-video__slider animate">
+							<div class="reviews-video__slide">
+								<div class="reviews-video-card">
+									<div class="reviews-video-card__image">
+										<div class="box">
+											<img src="img/reviews/poster.jpg" alt="фото">
+										</div>
+									</div>
+									<a href="video/main-video.mp4" class="reviews-video-card__play video-play-btn"
+										data-fancybox="video">
+										<span class="icon">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M4 0L15.2402 8L4 16V0Z" fill="#F7F6F2" />
+											</svg>
+										</span>
+									</a>
+									<div class="reviews-video-card__desc p-lg-5 p-3">
+										<p class="reviews-video-card__name">Петр Леванов</p>
+										<div class="reviews-video-card__text text mt-2">
+											<p>Одноэтажный дом в КП "Яблони парк"</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="reviews-video__slide">
+								<div class="reviews-video-card">
+									<div class="reviews-video-card__image">
+										<div class="box">
+											<img src="img/reviews/poster.jpg" alt="фото">
+										</div>
+									</div>
+									<a href="video/main-video.mp4" class="reviews-video-card__play video-play-btn"
+										data-fancybox="video">
+										<span class="icon">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M4 0L15.2402 8L4 16V0Z" fill="#F7F6F2" />
+											</svg>
+										</span>
+									</a>
+									<div class="reviews-video-card__desc p-lg-5 p-3">
+										<p class="reviews-video-card__name">Петр Леванов</p>
+										<div class="reviews-video-card__text text mt-2">
+											<p>Одноэтажный дом в КП "Яблони парк"</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="reviews-video__slide">
+								<div class="reviews-video-card">
+									<div class="reviews-video-card__image">
+										<div class="box">
+											<img src="img/reviews/poster.jpg" alt="фото">
+										</div>
+									</div>
+									<a href="video/main-video.mp4" class="reviews-video-card__play video-play-btn"
+										data-fancybox="video">
+										<span class="icon">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M4 0L15.2402 8L4 16V0Z" fill="#F7F6F2" />
+											</svg>
+										</span>
+									</a>
+									<div class="reviews-video-card__desc p-lg-5 p-3">
+										<p class="reviews-video-card__name">Петр Леванов</p>
+										<div class="reviews-video-card__text text mt-2">
+											<p>Одноэтажный дом в КП "Яблони парк"</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="reviews-video__slide">
+								<div class="reviews-video-card">
+									<div class="reviews-video-card__image">
+										<div class="box">
+											<img src="img/reviews/poster.jpg" alt="фото">
+										</div>
+									</div>
+									<a href="video/main-video.mp4" class="reviews-video-card__play video-play-btn"
+										data-fancybox="video">
+										<span class="icon">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M4 0L15.2402 8L4 16V0Z" fill="#F7F6F2" />
+											</svg>
+										</span>
+									</a>
+									<div class="reviews-video-card__desc p-lg-5 p-3">
+										<p class="reviews-video-card__name">Петр Леванов</p>
+										<div class="reviews-video-card__text text mt-2">
+											<p>Одноэтажный дом в КП "Яблони парк"</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="reviews-video__navigation slider-arrows d-lg-flex justify-content-center d-none">
+							<div class="reviews-video__prev arrow-prev arrow-prev--border-dark">
+								<div class="box">
+									<svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 4.70703L16 4.70703M12 8.70703L16 4.70703L12 0.707031"
+											stroke="#080808" stroke-width="2" />
+									</svg>
+								</div>
+							</div>
+							<div class="reviews-video__next arrow-next arrow-next--border-dark">
+								<div class="box">
+									<svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 4.70703L16 4.70703M12 8.70703L16 4.70703L12 0.707031"
+											stroke="#080808" stroke-width="2" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="reviews-video__pagination pagination d-flex justify-content-center d-lg-none"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="request section-line" data-theme-left="dark" data-theme-right="light">
+			<div class="container">
+				<div class="row g-lg-0">
+					<div class="col-lg-6">
+						<div class="section-bpt section-pb request__wrapper h-100">
+							<div
+								class="request__desc d-flex flex-column justify-content-between ps-lg-5 ms-lg-5 pe-lg-5 me-lg-5 h-100">
+								<h2 class="section-title request__title animate">Остались <span>Вопросы?</span></h2>
+								<div class="request__text text mt-4">
+									<p>Заполните форму, и наши менеджеры свяжутся с вами, чтобы ответить на все вопросы
+										и рассчитать стоимость услуг</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="request__wrap section-bpt section-pb">
+							<form action="" class="request-form ps-lg-5 ms-lg-5 me-lg-5 pe-lg-5 animate">
+								<div class="row g-lg-5 g-4">
+									<div class="col-12">
+										<div class="request-form__inputs">
+											<div class="row g-lg-5 g-4">
+												<div class="col-lg-6">
+													<label for="name" class="request-form__label form-label">Имя</label>
+													<input type="text" class="request-form__input input"
+														placeholder="Ваше имя" name="name" id="name">
+												</div>
+												<div class="col-lg-6">
+													<label for="phone"
+														class="request-form__label form-label">Телефон</label>
+													<input type="text" class="request-form__input input tel"
+														placeholder="+7 999 000-00-00" name="phone" id="phone">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<label for="name" class="request-form__label form-label">Комментарий</label>
+										<textarea name="comment" id="comment" class="request-form__textarea textarea"
+											placeholder="Текст сообщения"></textarea>
+									</div>
+									<div class="col-12">
+										<p class="request-form__privacy">Нажимая на кнопку, вы соглашаетесь с политикой
+											конфиденциальности</p>
+									</div>
+									<div class="col-12">
+										<button class="btn-light-border request-form__btn">
+											<span>Отправить</span>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="image-block section-line" data-theme="dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="image-block__image">
+							<div class="box">
+								<img src="img/image-block/bg-image.jpg" alt="фото">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer section-line">
+		<div class="container">
+			<div class="row g-0">
+				<div class="col-lg-6">
+					<div class="footer__logo p-lg-5 m-lg-5 mb-5">
+						<div class="box">
+							<img src="img/footer/logo.svg" alt="лого">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="footer__info p-lg-5 m-lg-5 mb-3">
+						<div class="row g-3">
+							<div class="col-6">
+								<div class="footer__col d-flex flex-column justify-content-between">
+									<p class="footer__name">Адрес</p>
+									<p class="footer__contact mt-lg-3 mt-2">г. Пенза,<br>
+										ул. Володарского, 2</p>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="footer__col d-flex flex-column justify-content-between">
+									<p class="footer__name">Эл. почта</p>
+									<a href="mailto:info@stroy.ru"
+										class="footer__contact mt-lg-3 mt-2">info@stroy.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row g-0 align-items-center flex-lg-row flex-column-reverse">
+				<div class="col-lg-6">
+					<p class="footer__copyright ps-lg-5 ms-lg-5 me-lg-5 pe-lg-5 mb-3">© 2024 AVB. Все права защищены.
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<div class="footer__items d-flex mb-4 mb-lg-0">
+						<div class="footer__item footer__item--1 d-flex align-items-center">
+							<a href="tel:939993" class="name footer__phone">93-99-93</a>
+						</div>
+						<div class="footer__item footer__item--2 d-flex align-items-center justify-content-center">
+							<a href="tel:939993" class="footer__phone--2">+7 922 93-99-93</a>
+						</div>
+						<div class="footer__item footer__item--3 d-flex align-items-center justify-content-center">
+							<a href="#" target="_blank" class="footer__social">
+								<div class="box">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M31.9233 11.8201L28.2873 28.8082C28.0161 30.0046 27.3201 30.2741 26.3145 29.7339L20.8606 25.7196L18.1906 28.2669C17.9206 28.5375 17.6494 28.8082 17.0302 28.8082L17.4562 23.2094L27.6297 13.983C28.0545 13.5578 27.5133 13.4033 26.9721 13.7518L14.323 21.704L8.86779 20.0441C7.66899 19.6584 7.66899 18.8465 9.13899 18.3075L30.3369 10.0835C31.3809 9.77456 32.2713 10.3159 31.9233 11.8201Z"
+											fill="#F7F6F2" />
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="footer__item footer__item--4 d-flex align-items-center justify-content-center">
+							<button class="footer__call">
+								<span>Связаться с нами</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row g-0">
+				<div class="col-lg-6">
+					<div class="footer__list d-flex flex-column">
+						<a href="#" class="footer__link" target="_blank">Положение об обработке персональных данных</a>
+						<a href="#" class="footer__link" target="_blank">Пользовательское соглашение</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div
+						class="footer__dop d-flex justify-content-between align-items-lg-center flex-lg-row flex-column">
+						<div class="footer__list d-flex flex-column mb-3 mb-lg-0">
+							<a href="#" class="footer__link" target="_blank">Согласие на обработку данных метрическими
+								программами</a>
+							<a href="#" class="footer__link" target="_blank">Согласие на обработку персональных
+								данных</a>
+						</div>
+						<a href="#" target="_blank"
+							class="footer__dev d-flex flex-lg-column align-items-lg-end align-items-center justify-content-between justify-content-lg-start py-4 py-lg-0">
+							<span class="footer__dev--text mb-1">Разработано</span>
+							<span class="footer__dev--logo">
+								<span class="box">
+									<img src="img/footer/elevenLAB.svg" alt="лого" class="dev-logo">
+									<img src="img/footer/elevenLAB-hover.svg" alt="лого" class="dev-logo--hover">
+								</span>
+							</span>
+						</a>
+						<a href="#header" class="footer__top">
+							<span class="icon">
+								<svg width="18" height="36" viewBox="0 0 18 36" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.5996 7.25L8.59961 1.25L0.599609 7.25M8.59961 1.25V35.25"
+										stroke="#F7F6F2" stroke-width="2" />
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- fancybox -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+	<!-- end -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

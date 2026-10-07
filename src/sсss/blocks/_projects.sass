@@ -1,0 +1,32 @@
+.projects
+	border-top: .0625rem solid var(--border)
+	&::before
+		height: calc(100% - 11.625rem)
+	.col-lg-6
+		&:nth-child(odd)
+			.project-card
+				&::before
+					content: ''
+					position: absolute
+					bottom: -1.25rem
+					left: -5rem
+					width: 100vw
+					border-top: .0625rem solid var(--border)
+		&:nth-last-child(2)
+			.project-card
+				&::before
+					display: none
+	&-other
+		border: none
+
+.projects-page
+	&::before
+		height: 100%
+
+@media (max-width: 991.98px)
+	.projects
+		.col-lg-6
+			&:nth-child(odd)
+				.project-card
+					&::before
+						display: none

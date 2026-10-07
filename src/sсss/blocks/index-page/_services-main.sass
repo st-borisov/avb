@@ -1,0 +1,120 @@
+.services-main
+	overflow: hidden
+	&::after
+		content: ''
+		width: 50%
+		height: 100%
+		background-color: var(--dark)
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 0
+	&__content
+		z-index: 1
+		position: relative
+	&__title
+		color: var(--light-text)
+	&__images-wrapper
+		position: relative
+		width: 100%
+		height: 50rem
+		overflow: hidden
+	&__image
+		width: 100%
+		//display: none
+		position: absolute
+		top: 0
+		left: 0
+		&:first-child
+			//display: block
+		.box
+			width: 100%
+			height: 50rem
+	&__slider
+		overflow: hidden
+		height: 50rem
+		.slick-track
+			flex-direction: column
+			transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important
+		.slick-list
+			overflow: visible
+			margin-top: -1.25rem
+			height: calc(100% + 2.5rem)
+		.slick-slide
+			margin: 1.25rem 0
+			transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important
+		.slick-slide.slick-current
+			.services-main
+				&__slide
+					color: var(--light-text)
+					border-color: var(--light-text)
+				&__text
+					color: var(--light-text)
+				&__top
+					&::after
+						background-color: var(--light-text)
+	&__slide
+		border: .0625rem solid #434343
+		color: #434343
+		height: 34.375rem
+	&__text
+		color: #434343
+	&__top
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			width: .625rem
+			height: .625rem
+			background-color: #434343
+	&__name
+		max-width: 18.75rem
+		width: 100%
+
+@media (max-width: 991.9808px)
+	.services-main
+		&::after
+			display: none
+		&__slider
+			position: relative
+			overflow: visible
+			height: auto
+			.slick-track
+				flex-direction: row
+			.slick-list
+				margin-top: 0
+				//margin-left: -0.625rem
+				height: auto
+				width: calc(100% + 1.25rem)
+			.slick-slide
+				margin: 0 .625rem
+				width: 37.5rem
+		&__slide
+			height: 25rem
+		&__content
+			padding: 3.75rem 0
+			position: relative
+			&::before
+				content: ''
+				width: 100vw
+				height: 100%
+				background-color: var(--dark)
+				position: absolute
+				top: 0
+				left: -1.5rem
+				z-index: -1
+		&__pagination
+			.slick-dots li button
+				background-color: #434343
+			.slick-dots li.slick-active button
+				background-color: #F7F6F2
+
+@media (max-width: 575.98px)
+	.services-main
+		&__slider
+			.slick-slide
+				width: 23.75rem
+		&__slide
+			height: 18.75rem

@@ -1,0 +1,32 @@
+.reviews
+	border-top: .0625rem solid var(--border)
+	&__text
+		max-width: 37.1875rem
+		width: 100%
+	&__slider
+		background-color: var(--bg)
+	&__slide
+		border-top: .0625rem solid var(--border)
+		border-bottom: .0625rem solid var(--border)
+		border-right: .0625rem solid var(--border)
+
+	&-page
+		border: none
+
+@media (max-width: 991.98px)
+	.reviews
+		&__slide
+			border: .0625rem solid var(--border)
+		&__slider
+			.slick-list
+				margin-left: -0.625rem
+				width: calc(100% + 1.25rem)
+			.slick-slide
+				margin: 0 .625rem
+		&-video
+			&__slider
+				.slick-list
+					margin-left: -0.625rem
+					width: calc(100% + 1.25rem)
+				.slick-slide
+					margin: 0 .625rem

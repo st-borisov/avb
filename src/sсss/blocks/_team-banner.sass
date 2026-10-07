@@ -1,0 +1,51 @@
+.team-banner
+	position: relative
+	height: 63.75rem
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 50%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.5)
+		z-index: 1
+	&__image
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 0
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-image: url(../img/team-banner/image.png)
+	&__text
+		color: var(--light-text)
+		font-weight: var(--semi)
+		z-index: 2
+		position: relative
+	&__name
+		color: var(--light-text)
+		z-index: 2
+		position: relative
+
+@media (max-width: 991.98px)
+	.team-banner
+		height: auto
+		&::after
+			display: none
+		&__image
+			width: 100vw
+			position: initial
+			margin-left: -1.5rem
+		&__text
+			color: var(--main)
+		&__name
+			color: var(--main)
+
+@media (max-width: 575.98px)
+	.team-banner
+		&__image
+			height: 22.5rem

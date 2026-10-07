@@ -1,0 +1,38 @@
+.partners-decisions
+	.services-main
+		&__title
+			color: var(--main)
+	&__logo
+		border: .0625rem solid var(--light-text)
+		border-right: none
+		+center
+		min-height: 6.25rem
+		.box
+			width: 10rem
+	&__logotypes
+		border-right: .0625rem solid var(--light-text)
+	&__name
+		font-size: 1.125rem
+		text-transform: uppercase
+		line-height: 1.2
+		font-weight: var(--med)
+
+@media (max-width: 991.98px)
+	.partners-decisions
+		.services-main
+			&__slide
+				height: 31.25rem
+		&__logo
+			.box
+				width: 8.75rem
+
+@media (max-width: 575.98px)
+	.partners-decisions
+		&__logo
+			min-height: 3.75rem
+			.box
+				width: 5rem
+		.services-main__bottom
+			height: 100%
+			+column
+			justify-content: space-between

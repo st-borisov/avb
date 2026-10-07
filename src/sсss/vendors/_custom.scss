@@ -1,0 +1,13 @@
+@import "bootstrap/scss/functions";
+
+$spacer: 1rem;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25, // 4px
+	2: $spacer * 0.625, // 10px
+	3: $spacer * 1.25, // 20px
+	4: $spacer * 1.875, // 30px
+	5: $spacer * 2.5 // 40px
+);
+
+@import "bootstrap/scss/bootstrap";
